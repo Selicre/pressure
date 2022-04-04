@@ -117,7 +117,9 @@ try {
 							| (keys.ArrowRight ? 2 : 0)
 							| (keys.KeyD ? 2 : 0)
 							| (keys.ArrowUp ? 4 : 0)
+							| (keys.KeyW ? 4 : 0)
 							| (keys.ArrowDown ? 8 : 0)
+							| (keys.KeyS ? 8 : 0)
 							| (keys.Enter ? 16 : 0)
 							| (keys.KeyZ ? 32 : 0)
 							| (keys.KeyX ? 64 : 0)
@@ -171,7 +173,7 @@ try {
 		document.addEventListener("mousedown", startGame, false);
 		document.addEventListener("touchstart", startGame, false);
 		output.innerHTML += "Finished\n";
-		banner.innerHTML = "Touch or press space to start";
+		banner.innerHTML = "Click or press space to start";
 	}).catch(e => output.innerHTML += e);
 } catch (e) {
 	output.innerHTML += e;
